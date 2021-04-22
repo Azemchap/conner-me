@@ -8,7 +8,7 @@
   width: 100%;
   min-height: 400px;
   min-width: 100px;
-  background-color: #fff;
+  background-color: rgb(87, 75, 75);
   z-index: 1;
 }
 
@@ -21,8 +21,7 @@
 
 .product__rating {
   display: flex;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .product__price {
@@ -37,7 +36,4 @@
   color: #111;
   padding: 2px 4px;
   cursor: pointer;
-}
-
-.product__info {
 }
