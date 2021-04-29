@@ -1,25 +1,28 @@
 import React from "react";
-import LeanStartup from "./img/leanstartup.png";
 import "./Product.css";
 
-function Product() {
+function Product({ title, price, rating, image }) {
     return (
         <div className="product">
-            <div className="product__info">
-                <p className="product__text"> The Lean Startup Lorem ipsum dolor sit amet, consectetur adipisicin! </p>
-                <p className="product__price">
-                    <small> $ </small> <small> $ </small> <strong> 11.96 </strong>
-                </p>
+            <div className="product__stuff">
+                <div className="product__info">
+                    <p className="product__text">{title}</p>
+                    <p className="product__price">
+                        <small> $ </small> <small> $ </small> <strong>{price}</strong>
+                    </p>
+                </div>
+                <div className="product__rating">{
+                    Array(rating)
+                        .fill()
+                        .map((_, i) => (
+                            <p>⭐</p>
+                        ))
+                }
+                </div>
             </div>
-            <div className="product__rating">
-                <p>⭐</p>
-                <p>⭐</p>
-                <p>⭐</p>
-                <p>⭐</p>
-                <p>⭐</p>
-            </div>
-            <img className="The_Lean_Startup" src={LeanStartup} alt="The Lean Startup" />
-            <button className="button"> Add Basket </button>
+            <img className="The_Lean_Startup" src={image} />
+
+            <button className="button"> Add To Basket </button>
         </div>
     );
 }
