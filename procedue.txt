@@ -1,9 +1,0 @@
-
-
-
-
-
-
-04) install react router via terminal {
-    //npm i react-router-dom
-}
