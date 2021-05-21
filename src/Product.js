@@ -6,7 +6,7 @@ function Product() {
     return (
         <div className="product">
             <div className="product__info">
-                <p className="product__text"> The Lean Startup! Lorem ipsum dolor adipisi.</p>
+                <p className="product__text"> The Lean Startup! Lorem ipsum Dolor rem ipsum Dolor rem ipsum Dolor...</p>
                 <p className="product__price">
                     <small> $ </small> <small> $ </small> <strong> 11.96 </strong>
                 </p>
@@ -19,7 +19,7 @@ function Product() {
                 <p>⭐</p>
             </div>
             <img className="The_Lean_Startup" src={LeanStartup} alt="The Lean Startup" />
-            <button className="button"> Add Basket </button>
+            <button className="button"> Add To Basket</button>
         </div>
     );
 }
