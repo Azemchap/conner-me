@@ -18,7 +18,7 @@ function Home() {
             </div>
 
             <div className="home__row">
-                <Product id={896526} title="The Lean Startup v1" price={29.99} image={LeanStartup} rating={3} />
+                <Product id={896526} title="The Lean Startup" price={29.99} image={LeanStartup} rating={3} />
                 <Product id={127890} title="The Lean Startup v2" price={39.99} image={machine} rating={4} />
             </div>
 

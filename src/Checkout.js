@@ -1,10 +1,9 @@
 import React from 'react';
 import "./Checkout.css";
 import checkout from "./img/checkout-bg.jpg";
-import LeanStartup from "./img/leanstartup.png";
 import Subtotal from "./Subtotal";
 import CheckoutProduct from './CheckoutProduct';
-import { useStateValue } from './StateProvider'
+import { useStateValue } from './StateProvider';
 
 
 
@@ -18,14 +17,6 @@ function Checkout() {
                     src={checkout} alt="" />
                 <div>
                     <h2 className="checkout__title">Your shopping Basket</h2>
-
-                    <CheckoutProduct
-                        id='123456'
-                        title="The Lean Startup"
-                        image={LeanStartup}
-                        price={199.99}
-                        rating={5}
-                    />
 
                     {basket.map(item => (
                         <CheckoutProduct
@@ -46,4 +37,4 @@ function Checkout() {
     )
 }
 
-export default Checkout
+export default Checkout;
